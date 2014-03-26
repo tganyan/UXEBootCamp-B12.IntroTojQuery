@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Playing with Jquery</title>
+	<title>The Jquery Family</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/layout.css">
@@ -13,40 +13,24 @@
 	<div >
 			<header>
 				<h1>
-					<a href="#">Jquery Things and Stuff</a>
+					<a href="#">The Jquery Family</a>
 				</h1>
 				<nav>
 					<a href="#" class="show-grandpa">Grandpa</a>
 					<a href="#" class="show-dad">Dad</a>
 					<a href="#" class="show-daughter">Daughter</a>
-					<a href="#" class="show-gregrand">Great Grandma</a>
-					<a href="#" class="show-all">Show All</a>
+					<a href="#" class="button">Hide Great Grandma</a>
 				</nav>
 			</header>
-		<section id="great-grandma"><h1>Great Grandma</h1>
-			<div id="grandpa"><h2>Grandpa</h2>
-				<div id="dad"><h3>Dad</h3>
-					<div id="daughter"><p>Daughter</p></div>
+			<section id="great-grandma">
+				<h1>Great Grandma</h1>
+				<div id="grandpa"><h2>Grandpa</h2>
+					<div id="dad"><h3>Dad</h3>
+						<div id="daughter"><p>Daughter</p></div>
+					</div>
 				</div>
-			</div>
-		</section>
-	<script type="text/javascript">
-		$(".show-grandpa").click(function(){
-			$("#grandpa").toggle();
-		});
-		$(".show-dad").click(function(){
-			$("#dad").toggle();
-		});
-		$(".show-daughter").click(function(){
-			$("#daughter").toggle();
-		});
-		$(".show-gregrand").click(function(){
-			$("#great-grandma").toggle();
-		});
-		$(".show-all").click(function(){
-			$("#great-grandma").find(div).show();
-		});
-	</script>
+			</section>
+	<script type="text/javascript" src="myscript.js"></script>
 </body>
 
 </html>

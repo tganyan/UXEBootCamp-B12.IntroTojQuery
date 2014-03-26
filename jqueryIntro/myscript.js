@@ -1,4 +1,4 @@
-$(".show-grandpa").click(function(){
+    $(".show-grandpa").click(function(){
       $("#grandpa").toggle();
     });
     $(".show-dad").click(function(){
@@ -7,9 +7,8 @@ $(".show-grandpa").click(function(){
     $(".show-daughter").click(function(){
       $("#daughter").toggle();
     });
-    $(".show-gregrand").click(function(){
-      $("#great-grandma").toggle();
-    });
-    $(".show-all").click(function(){
-      $("#great-grandma").find(div).show();
+    $('.button').click(function() {
+      $('#great-grandma').find('h1').toggle(1000, function() {
+        alert("Grandma's Gone!");
+      });
     });
