@@ -1,0 +1,95 @@
+html {
+	font-size: 1em;
+	line-height: 1;
+}
+body {
+	font-size: 100%;
+	background-color: lightgrey;
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+	font-family: verdana;
+	text-align: center;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+	text-align: center;
+	background-color: orange;
+	width: 600px;
+	margin: 0 auto;
+}
+
+nav a {
+	display: inline-block;
+	line-height: 2em;
+	padding: 0 0.5em;
+	text-decoration: none;
+	background-color: orange;
+}
+
+#great-grandma {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	background-color: darkgrey;
+}
+
+#grandpa {
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-color: teal;
+	display: none;
+}
+
+#dad {
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	background-color: lightgrey;
+	display: none;
+}
+
+#daughter {
+	margin: 0 auto;
+	width: 175px;
+	height: 175px;
+	background-color: orange;
+	display: none;
+}
+
+.show-granpda {
+
+}
+
+.show-dad {
+
+}
+
+.show-daughter {
+
+}
+
+.show-gregrand {
+
+}
+
+
+

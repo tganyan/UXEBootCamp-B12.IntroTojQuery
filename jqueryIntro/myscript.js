@@ -1,0 +1,15 @@
+$(".show-grandpa").click(function(){
+      $("#grandpa").toggle();
+    });
+    $(".show-dad").click(function(){
+      $("#dad").toggle();
+    });
+    $(".show-daughter").click(function(){
+      $("#daughter").toggle();
+    });
+    $(".show-gregrand").click(function(){
+      $("#great-grandma").toggle();
+    });
+    $(".show-all").click(function(){
+      $("#great-grandma").find(div).show();
+    });
