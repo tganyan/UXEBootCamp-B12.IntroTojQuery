@@ -7,8 +7,19 @@
     $(".show-daughter").click(function(){
       $("#daughter").toggle();
     });
-    $('.button').click(function() {
-      $('#great-grandma').find('h1').toggle(1000, function() {
-        alert("Grandma's Gone!");
-      });
-    });
+
+    function toggleHide(targetObject) {
+      var bIsHidden = targetObject.data('hidden');
+      if(bIsHidden === "false"){
+        targetObject.hide(1000, function() {
+          alert("Grandma's Gone!");
+          targetObject.data('hidden', 'true');
+        });
+      } else {
+        targetObject.show(1000, function() {
+          alert("Grandma Came Back From The Grave... KILL THE ZOMBIE!");
+          targetObject.data('hidden', 'false');
+        });
+      }
+    }
+    $('.great-grandma-button').on('click', toggleHide(targetObject));
