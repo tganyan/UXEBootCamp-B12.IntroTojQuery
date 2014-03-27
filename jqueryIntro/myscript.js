@@ -7,19 +7,21 @@
     $(".show-daughter").click(function(){
       $("#daughter").toggle();
     });
+    // $(".great-grandma-button").click(function(){
+    //   $("#great-grandma").find("h1").toggle();
+    //   alert("Grandma's Gone!");
+    // });
 
-    function toggleHide(targetObject) {
-      var bIsHidden = targetObject.data('hidden');
-      if(bIsHidden === "false"){
-        targetObject.hide(1000, function() {
-          alert("Grandma's Gone!");
-          targetObject.data('hidden', 'true');
-        });
-      } else {
-        targetObject.show(1000, function() {
-          alert("Grandma Came Back From The Grave... KILL THE ZOMBIE!");
-          targetObject.data('hidden', 'false');
-        });
-      }
-    }
-    $('.great-grandma-button').on('click', toggleHide(targetObject));
+
+    $(".great-grandma-button").on('click', function() {
+        var h1 = $("#great-grandma").find("h1");
+        h1.toggle();
+        if (h1.is(':visible')) {
+            alert("Grandma's back from the dead... KILL THE ZOMBIE!!!");
+        } else {
+            $(h1).css("color", "green")
+            alert("Grandma's Gone!!");
+        }
+    });
+
+
