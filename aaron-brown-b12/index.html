@@ -16,17 +16,17 @@
 					<a href="#">The Jquery Family</a>
 				</h1>
 				<nav>
-					<a href="#" class="show-grandpa">Grandpa</a>
-					<a href="#" class="show-dad">Dad</a>
-					<a href="#" class="show-daughter">Daughter</a>
-					<a href="#" class="great-grandma-button">Great Grandma</a>
+					<a href="#" class="show-grandpa" data-button="grandpa">Grandpa</a>
+					<a href="#" class="show-dad" data-button="dad">Dad</a>
+					<a href="#" class="show-daughter" data-button="daughter">Daughter</a>
+					<a href="#" class="great-grandma-button" data-button="great-grandma">Great Grandma</a>
 				</nav>
 			</header>
-			<section id="great-grandma">
+			<section id="great-grandma" data-name="Great Grandma">
 				<h1>Great Grandma</h1>
-				<div id="grandpa"><h2>Grandpa</h2>
-					<div id="dad"><h3>Dad</h3>
-						<div id="daughter"><p>Daughter</p></div>
+				<div id="grandpa" data-button="grandpa" data-name="Grandpa"><h2>Grandpa</h2>
+					<div id="dad" data-button="dad" data-name="Dad"><h3>Dad</h3>
+						<div id="daughter" data-button="daughter" data-name="Daughter"><p>Daughter</p></div>
 					</div>
 				</div>
 			</section>
