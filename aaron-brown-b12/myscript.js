@@ -58,5 +58,9 @@ var divGrandma = $("#great-grandma");
 //$(".great-grandma-button").on('click', dazzleCool(divGrandma));
 $(".great-grandma-button").click(dazzleCool);
 
+// Panel slider. Selecting button with class "btn-slide" and applying function that toggles slide animation and activates "active" class on #panel.
 
-
+$(".btn-slide").click(function(){
+    $("#panel").slideToggle("slow");
+    $(this).toggleClass("active");
+    });

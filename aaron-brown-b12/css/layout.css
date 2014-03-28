@@ -1,3 +1,5 @@
+/*Global styles*/
+
 html {
 	font-size: 1em;
 	line-height: 1;
@@ -20,7 +22,7 @@ h1,
 h2,
 h3,
 p {
-	font-family: verdana;
+	font-family: arial, helvetica, sans-serif;
 	text-align: center;
 	color: white;
 }
@@ -43,6 +45,10 @@ nav a {
 	text-decoration: none;
 	background-color: orange;
 }
+
+/*end global styles*/
+
+/*styles for jquery family divs*/
 
 #great-grandma {
 	margin: 0 auto;
@@ -78,6 +84,44 @@ nav a {
 	display: none;
 	border-radius: 10px;
 }
+/*end jquery family styles*/
 
+/*styles for slider panel*/
+.btn-slide {
+  text-align: center;
+  width: 144px;
+  height: 31px;
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  background-color: purple;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#panel {
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  display: none;
+  border-radius: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.slide {
+  margin: 0;
+  padding: 0;
+}
+
+#panel h1 {
+	color: orange;
+}
+
+/*end slider styles*/
 
 
